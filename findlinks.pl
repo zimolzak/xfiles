@@ -1,6 +1,11 @@
 #!/usr/bin/perl -w
 # usage: ./findlinks.pl ep_ratings.html > get_htmls.sh
 
+# Note that ep_ratings.html is:
+# http://www.imdb.com/title/tt0106179/eprate?ref_=ttep_ql_3 . It is a
+# list of mean ratings of all x-files episodes *with links* to
+# indivitual histograms.
+
 use strict;
 my $epcode;
 print "#!/bin/sh\n";
