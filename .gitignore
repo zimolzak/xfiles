@@ -2,3 +2,6 @@
 *.doc
 *.docx
 *.html
+htmls/
+*.png
+*.pdf
