@@ -1,10 +1,14 @@
 #!/usr/bin/perl -w
 # usage: ./findlinks.pl ep_ratings.html > get_htmls.sh
 
-# Note that ep_ratings.html is:
+# Pull links to x-files episode pages out of an IMDb HTML file. Note
+# that ep_ratings.html is:
 # http://www.imdb.com/title/tt0106179/eprate?ref_=ttep_ql_3 . It is a
 # list of mean ratings of all x-files episodes *with links* to
 # indivitual histograms.
+
+# Copyright (C) 2014 Andrew J. Zimolzak. Full copyright notice,
+# exclusion, and license are in the LICENSE file.
 
 use strict;
 my $epcode;

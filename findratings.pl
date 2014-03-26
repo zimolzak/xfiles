@@ -1,7 +1,14 @@
 #!/usr/bin/perl -w
 # usage: cat htmls/*.html | ./findratings.pl > ratings.csv
-# Needs fixing because 'cat' command doesn't let us know filename
-# (episode code).
+
+# Take many HTML files (about user ratings of x-files episodes)
+# downloaded from IMDb, and pull numerical rating data out of the
+# HTML. Needs fixing because 'cat' command doesn't let us know
+# filename (episode code).
+
+# Copyright (C) 2014 Andrew J. Zimolzak. Full copyright notice,
+# exclusion, and license are in the LICENSE file.
+
 use strict;
 
 while(<>){
