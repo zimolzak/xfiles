@@ -44,9 +44,9 @@ Files generated algorithmically (i.e. outputs), uploaded to Github:
 Examples
 --------
 
-One histogram per episode:
+One histogram per episode (now with titles!):
 
-![small multiple of histogram](https://dl.dropboxusercontent.com/u/38640281/xfiles/smallmultiple.png)
+![small multiple of histogram](https://dl.dropboxusercontent.com/u/38640281/xfiles/multiple_title.png)
 
 All episodes horizontally:
 
@@ -62,5 +62,5 @@ Violin plot:
 
 Full PDFs of the histogram and pseudo-beanplot above:
 
-* https://dl.dropboxusercontent.com/u/38640281/xfiles/smallmult.pdf
+* https://dl.dropboxusercontent.com/u/38640281/xfiles/multiple_title.pdf
 * https://dl.dropboxusercontent.com/u/38640281/xfiles/pseudo-beanplot.pdf
