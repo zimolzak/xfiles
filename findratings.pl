@@ -11,6 +11,18 @@
 
 use strict;
 
+my @season;
+my @episode;
+my @filename = split("\n", `ls htmls/*.html`);
+foreach (@filename) {
+    s/htmls\///;
+    s/\.html//;
+    push(@season,  (split("_"))[0]);
+    push(@episode, (split("_"))[1]);
+}
+
+print "s,e,10,9,8,7,6,5,4,3,2,1\n"; #header row
+
 while(<>){
     if (/Arithmetic/){
 	chomp;
@@ -22,7 +34,7 @@ while(<>){
 	foreach (@tablerow) {
 	    s/^<td align="right">([0-9]+).*/$1/;
 	}
-	print join(",", @tablerow);
+	print join(",", shift @season, shift @episode, @tablerow);
 	print "\n";
     }
 }
