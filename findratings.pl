@@ -21,9 +21,16 @@ foreach (@filename) {
     push(@episode, (split("_"))[1]);
 }
 
-print "s,e,10,9,8,7,6,5,4,3,2,1\n"; #header row
+print "s,e,10,9,8,7,6,5,4,3,2,1,title\n"; #header row
 
+my $title;
 while(<>){
+    if (/<title>/){
+	chomp;
+	s/<title>&#x22.*&#x22; (.*) \(.*/$1/;
+	s/ //g;
+	$title = substr($_, 0, 8);
+    }
     if (/Arithmetic/){
 	chomp;
 	s/.*(<table)/$1/;
@@ -34,7 +41,10 @@ while(<>){
 	foreach (@tablerow) {
 	    s/^<td align="right">([0-9]+).*/$1/;
 	}
-	print join(",", shift @season, shift @episode, @tablerow);
+	my $s = shift @season;
+	my $e = shift @episode;
+	$e = "0" . $e if length($e) == 1;
+	print join(",", $s, $e, @tablerow, $s . $e . $title);
 	print "\n";
     }
 }
