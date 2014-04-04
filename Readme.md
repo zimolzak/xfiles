@@ -40,3 +40,27 @@ Files generated algorithmically (i.e. outputs), uploaded to Github:
 
 * get_htmls.sh
 * ratings.csv
+
+Examples
+--------
+
+One histogram per episode:
+
+![small multiple of histogram](https://dl.dropboxusercontent.com/u/38640281/xfiles/smallmultiple.png)
+
+All episodes horizontally:
+
+![long wide pseudo-beanplot](https://dl.dropboxusercontent.com/u/38640281/xfiles/pseudo-beanplot.png)
+
+Horizonally, but zoomed in on first 50 episodes only:
+
+![zoomed in pseudo-beanplot](https://dl.dropboxusercontent.com/u/38640281/xfiles/first50-bean.png)
+
+Violin plot:
+
+* https://dl.dropboxusercontent.com/u/38640281/xfiles/violin.pdf
+
+Full PDFs of the histogram and pseudo-beanplot above:
+
+* https://dl.dropboxusercontent.com/u/38640281/xfiles/smallmult.pdf
+* https://dl.dropboxusercontent.com/u/38640281/xfiles/pseudo-beanplot.pdf
